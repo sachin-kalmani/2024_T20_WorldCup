@@ -30,6 +30,7 @@ const TeamPages = () => {
   return (
         <div className='p-10 absolute left-[12%] w-[90%]'>
                 <h1 className='text-[70px] font-semibold'>{team.teamName}</h1>
+                <h1 >Latest Matches</h1>
                 <MatchDetailCard teamName={team.teamName} match={team.matches[0]}/>
                 <div className='grid grid-cols-4 gap-4 items-start'> 
                 {team.matches.slice(1).map(match=><MatchSmallCard teamName={team.teamName} match={match}/>)}

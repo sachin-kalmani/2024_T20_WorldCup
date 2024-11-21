@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const MatchDetailCard = ({teamName,match}) => {
+const MatchDetailCard2 = ({teamName,match}) => {
     if(!match) return null;
     const otherTeam = match.team1 === teamName ? match.team2 : match.team1;
     const otherTeamRoute = `/team/${otherTeam}`;
@@ -34,4 +34,4 @@ const MatchDetailCard = ({teamName,match}) => {
   )
 }
 
-export default MatchDetailCard
+export default MatchDetailCard2
